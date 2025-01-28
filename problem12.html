@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black ; color: white">
+    
+</body>
+<script>
+    for (let i = 0; i<5 ; i++){
+        let newDiv;
+        if(i===0){
+           newDiv = createDiv("white","black");
+        } else if (i===1){
+            newDiv = createDiv("red")
+        } else{
+           newDiv = createDiv("green")
+        }  };
+
+
+   function createDiv (color,font){ const div = document.createElement("div");
+    div.className="main";
+    div.id=Math.round(Math.random()*10+1);
+    div.style.backgroundColor =color;
+    div.style.color=font;
+    div.innerText="hello coder";
+    document.body.appendChild(div);
+}
+
+</script>
+</html>
